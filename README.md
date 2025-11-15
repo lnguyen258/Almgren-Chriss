@@ -8,7 +8,7 @@ Overview
 
 The Almgren–Chriss model (Almgren & Chriss, 2000) gives a tractable continuous-time framework to compute an optimal trading schedule that balances expected execution cost (market impact) against the risk from price volatility. It is widely used for slicing large orders into a time series of smaller trades.
 
-![LMT+NOC graph](asset/image_1.png)
+![LMT+NOC graph](asset/image_1.png){width=50%}
 
 Model setup (continuous-time, simplified)
 ----------------------------------------
@@ -28,7 +28,7 @@ $$
 
 where $\lambda\ge 0$ is a risk-aversion parameter and $C$ is the total execution cost. Under the simple temporary-impact model the optimal continuous-time solution (no permanent impact) has a closed form.
 
-![LMT+NOC graph](asset/image_2.png)
+![LMT+NOC graph](asset/image_2.png){width=50%}
 
 References
 ----------
