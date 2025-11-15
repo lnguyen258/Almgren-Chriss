@@ -23,7 +23,7 @@ Execution objective
 We choose a trading schedule $X_t$ to minimize a trade-off between expected cost and risk (variance of cost):
 
 \[
-	ext{Minimize } \; \mathbb{E}[C] + \frac{\lambda}{2}\mathrm{Var}[C]
+	\text{Minimize } \quad \mathbb{E}[C] + \frac{\lambda}{2}\mathrm{Var}[C]
 \]
 
 where $\lambda\ge 0$ is a risk-aversion parameter and $C$ is the total execution cost. Under the simple temporary-impact model the optimal continuous-time solution (no permanent impact) has a closed form.
