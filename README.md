@@ -22,33 +22,13 @@ Execution objective
 
 We choose a trading schedule $X_t$ to minimize a trade-off between expected cost and risk (variance of cost):
 
-\[
+$$
 	\text{Minimize } \quad \mathbb{E}[C] + \frac{\lambda}{2}\mathrm{Var}[C]
-\]
+$$
 
 where $\lambda\ge 0$ is a risk-aversion parameter and $C$ is the total execution cost. Under the simple temporary-impact model the optimal continuous-time solution (no permanent impact) has a closed form.
 
 ![LMT+NOC graph](asset/image_2.png)
-
-Closed-form optimal trajectory
------------------------------
-
-Define
-
-$$\kappa = \sqrt{\frac{\lambda\sigma^2}{\eta}}. $$
-
-The optimal remaining inventory is
-
-$$ X_t = Q\,\frac{\sinh\bigl(\kappa (T-t)\bigr)}{\sinh\bigl(\kappa T\bigr)}. $$
-
-Corresponding trading rate (sell rate) is
-
-$$ v_t = -\dot X_t = Q\,\frac{\kappa\cosh\bigl(\kappa (T-t)\bigr)}{\sinh\bigl(\kappa T\bigr)}. $$
-
-Special cases:
-- When $\lambda\to 0$ (risk-neutral), $\kappa\to 0$ and the schedule approaches uniform (VWAP-like) trading.
-- For larger $\lambda$ the schedule front-loads liquidation to reduce variance exposure.
-
 
 References
 ----------
